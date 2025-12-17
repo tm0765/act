@@ -1,0 +1,18 @@
+name: Run Shell Script
+
+on: [push]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # Use a Linux runner
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2  # Check out the repository
+      - name: install re
+        run: pip3 install tqdm
+
+      - name: Execute Script
+        run: |
+          chmod +x ./script.sh  # Make sure the script is executable
+          ./me.sh            # Run the script
