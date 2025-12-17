@@ -2,7 +2,7 @@
 
 # Define the input text file and Python script
 input_file="input.txt"
-python_script="script.py"
+python_script="scanner.py"
 
 # Read the file line by line
 while IFS= read -r line; do
