@@ -8,4 +8,5 @@ python_script="scanner.py"
 while IFS= read -r line; do
     # Execute the Python script with the line as an argument
     python3 "$python_script" "-u" "$line"
+    python3  "poc.py" "$line"
 done < "$input_file"
